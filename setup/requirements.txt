@@ -1,0 +1,9 @@
+cufflinks==0.17.3
+nsetools
+plotly
+pandas
+pandas_ta
+streamlit
+streamlit-aggrid
+watchdog
+yfinance
