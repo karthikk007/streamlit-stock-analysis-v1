@@ -1,9 +1,11 @@
 import streamlit as st
+import logging
 
 
 PAGE_TITLE = "Page 2"
 PAGE_ICON = "💹"
 
+logger = logging.getLogger('mylogger')
 
 def configure_page():
     st.set_page_config(
@@ -19,6 +21,6 @@ def configure_page():
 
 def app():
     configure_page()
-
+    logger.error('page 2')
 
 app()
