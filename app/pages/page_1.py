@@ -17,6 +17,7 @@ def configure_page():
     st.sidebar.markdown("# Main page 🎈")
     st.title('')
 
+
 def app():
     configure_page()
 
