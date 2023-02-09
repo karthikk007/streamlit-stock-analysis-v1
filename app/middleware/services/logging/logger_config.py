@@ -1,5 +1,6 @@
 import logging
 
+
 class CustomFormatter(logging.Formatter):
     """Logging colored formatter, adapted from https://stackoverflow.com/a/56944256/3638629"""
 
@@ -34,7 +35,7 @@ def setup_logger():
 
     if len(logger.handlers) == 0:
         # Define format for logs
-        fmt = '%(asctime)s | %(name)s | %(levelname)8s | %(message)s'
+        fmt = '%(asctime)s | %(threadName)s | %(levelname)8s | %(message)s'
 
         # Create stdout handler for logging to the console (logs all five levels)
         stdout_handler = logging.StreamHandler()
